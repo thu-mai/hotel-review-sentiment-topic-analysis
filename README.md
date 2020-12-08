@@ -27,13 +27,19 @@ The following steps were performed to structure the raw data
 
 ### 2.3 Lexicon-based Sentiment Polarity Classification 
 This method makes use of an existing lexicon (or dictionary) with words tagged as negative or positive.
-To investigate the impact of positive and negative sentiment on reviewer score, we calculated positive score and negative score
+
+To investigate the impact of positive and negative sentiment on reviewer score, positive score and negative score are calculated:
 * The positive score was calculated by counting the number of words in the review that matched the list of positive words. 
 * Likewise, the negative score was calculated by counting the number of words in the review that matched the list of positive words. 
 * The total score equals to positive score minus negative score. 
+
 A review is classified as positive if total score is equal or larger than 0, and negative if total score is less than 0. 
-To understand the impact of positive and negative sentiment on reviewer score, we ran a multi-linear regression analysis with positive score and negative score being the explanatory variables and reviewer score being the target variable. 
+
+To understand the impact of positive and negative sentiment on reviewer score, a multi-linear regression analysis was run with positive score and negative score being the explanatory variables and reviewer score being the target variable. 
 
 ## 3. Topic Modeling
 Methodologies
 Result
+
+![Image of Coherence](https://github.com/thu-mai/hotel-review-sentiment-topic-analysis/blob/main/images/coherentscore.PNG)
+
